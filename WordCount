@@ -1,0 +1,18 @@
+#include<stdio.h>
+
+int main()//求最大公约数
+{
+    int m, n;
+    int i, k;
+    printf("请输入两个数：");
+    scanf("%d %d", &m, &n);
+    k = m < n ? m : n;
+    for (i = k; i >= 1; i--)
+    {
+        if ((m % i == 0) && (n % i == 0))
+        {
+            printf("最大公约数是%d\n", i);
+            break;
+        }
+    }
+}
