@@ -5,7 +5,7 @@ int main()//求最大公约数
     int m, n;
     int i, k;
     printf("请输入两个数：");
-    scanf("%d %d", &m, &n);
+    scanf_s("%d %d", &m, &n);
     k = m < n ? m : n;
     for (i = k; i >= 1; i--)
     {
